@@ -34,7 +34,7 @@ class WebhooksController < ApplicationController
         			elsif text.casecmp("/contact").zero?
         				reply(sender ,"inventionsbyhamid@gmail.com",url)
         			elsif text.include?('new property')
-        				reply(sender ,"Season Residence (Wangsa Maju)/nThistle Grove (Denai Alam)",url)
+        				reply(sender ,"1) Season Residence (Wangsa Maju)\n\n2) Thistle Grove (Denai Alam)",url)
         			elsif text.casecmp("/timings").zero?
         				reply(sender , "9:15 AM to 5:00 PM",url)
         			elsif text.casecmp("/help").zero?
