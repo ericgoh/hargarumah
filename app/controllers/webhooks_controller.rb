@@ -33,7 +33,7 @@ class WebhooksController < ApplicationController
         				reply(sender , "212, Okhla Phase III, Okhla Industrial Area, New Delhi, Delhi 110020\nNearest Metro station Govind Puri.",url)
         			elsif text.casecmp("/contact").zero?
         				reply(sender ,"inventionsbyhamid@gmail.com",url)
-        			elsif text.casecmp("new property").zero?
+        			elsif text.include?("new property").zero?
         				reply(sender ,"Season Residence (Wangsa Maju)/nThistle Grove (Denai Alam)",url)
         			elsif text.casecmp("/timings").zero?
         				reply(sender , "9:15 AM to 5:00 PM",url)
